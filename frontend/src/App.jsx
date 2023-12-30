@@ -6,8 +6,8 @@ import ShowBook from './pages/ShowBook';
 import EditBook from './pages/EditBook';
 import DeleteBook from './pages/DeleteBook';
 
-export default function App() {
-  return (
+const App = () => {
+    return (
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/books/create' element={<CreateBook />} />
@@ -16,4 +16,6 @@ export default function App() {
       <Route path='/books/delete/:id' element={<DeleteBook />} />
     </Routes>
   )
-}
+};
+
+export default App;
